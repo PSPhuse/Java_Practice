@@ -1,16 +1,22 @@
+package Collection;
+
 public class Employee {
 
-    protected  String eName;
-    protected  double salary;
+    int id;
+    String name;
+    String dept;
+    double salary;
 
-    public Employee(String eName, double salary)
+    public Employee(int id,String name,String dept,double salary)
     {
-        this.eName = eName;
+        this.id = id;
+        this.name = name;
+        this.dept = dept;
         this.salary = salary;
     }
-    public void displayEmployee()
+    public void getEmployee()
     {
-        System.out.println("Name of Employee:"+eName);
-        System.out.println("Salary:"+salary);
+        System.out.println("Id:"+id+" Name:"+name+" Salary:"+salary+" Department:"+dept);
+        System.out.println("===================");
     }
 }
